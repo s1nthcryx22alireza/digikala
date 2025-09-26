@@ -1,0 +1,20 @@
+.slider {
+  max-height: 45rem;
+  &__pic {
+    cursor: grab;
+    @include Responsive(tabletl) {
+      min-height: 268px;
+      object-fit: cover;
+    }
+  }
+  &__navigation {
+    position: absolute;
+    bottom: 3rem;
+    right: 6rem;
+    width: 10rem;
+    height: 5rem;
+    @include Responsive(tabletl) {
+      display: none;
+    }
+  }
+}

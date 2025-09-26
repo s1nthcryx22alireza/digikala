@@ -1,0 +1,23 @@
+.mostsell {
+  cursor: grab;
+  &__content {
+    @include Responsive(tablet) {
+      border: none !important;
+    }
+    &-border {
+      @include Responsive(tablet) {
+        border-bottom: none !important;
+      }
+    }
+    &-text {
+      @include Responsive(tablet) {
+        position: static;
+      }
+    }
+  }
+  &__image {
+    width: 8.6rem !important;
+    height: 8.6rem !important;
+    flex-shrink: 0;
+  }
+}

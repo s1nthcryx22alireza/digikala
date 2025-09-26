@@ -1,0 +1,13 @@
+.brands {
+  &__items {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__img {
+    max-width: 5rem;
+    @include Responsive(tablet) {
+      max-width: 7.5rem;
+    }
+  }
+}

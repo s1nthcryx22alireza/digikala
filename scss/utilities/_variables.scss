@@ -1,0 +1,74 @@
+//! ------------- other colors ------------//
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+$blue: #0d6efd;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #198754;
+$teal: #20c997;
+$cyan: #0dcaf0;
+
+//!------------ override colors ----------//
+
+$primary: #941b80;
+$secondary: #19bed1;
+$secondarydark: rgb(61, 76, 111);
+$tertiary: #ef394e;
+$gray: #e1e1e1;
+$subtitle: #818489;
+$search: #eaeaec;
+$success: #3bae03;
+
+//!------------ radial colors ----------//
+
+$radial-primary: #26cfe2;
+$radial-secondary: #11b0c2;
+$radial-tertiary: #0694a4;
+
+//!------------ radial Map colors ----------//
+
+$radial-colors: (
+  "radial-primary": $radial-primary,
+  "radial-secondary": $radial-secondary,
+  "radial-tertiary": $radial-tertiary,
+);
+//!------------ Map colors ----------//
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "secondarydark": $secondarydark,
+  "tertiary": $tertiary,
+  "gray": $gray,
+  "subtitle": $subtitle,
+  "search": $search,
+  "success": $success,
+  "gray-800": $gray-800,
+  "gray-700": $gray-700,
+  "gray-600": $gray-600,
+  "gray-400": $gray-400,
+  "gray-500": $gray-500,
+  "yellow": $yellow,
+);
+
+//!------------ Font Size Variables ----------//
+
+$fs-1: 3.1rem;
+$fs-2: 2.5rem;
+$fs-3: 2rem;
+$fs-4: 1.5rem;
+$fs-5: 1.3rem;
+$fs-6: 1.1rem;

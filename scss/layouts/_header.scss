@@ -1,0 +1,150 @@
+.header {
+  box-shadow: 0 -0.2rem 0.7rem rgba(0, 0, 0, 0.3);
+  &__banner {
+    @include Responsive(tablet) {
+      min-height: 40px;
+      object-fit: cover;
+    }
+  }
+  &__login {
+    cursor: pointer;
+  }
+  &__search {
+    &-respon {
+      @include Responsive(tablet) {
+        width: 100%;
+      }
+    }
+    &-box {
+      position: relative;
+      @include Responsive(tablet) {
+        width: 100%;
+      }
+    }
+    &-input {
+      width: 50rem;
+      outline: none;
+      padding-right: 35px;
+      @include Responsive(tablet) {
+        width: 100%;
+      }
+    }
+    &-icon {
+      position: absolute;
+      right: 3%;
+      top: 28%;
+      width: 19px;
+      height: 19px;
+      color: #a2a4a9;
+      @include Responsive(tablet) {
+        right: 2%;
+        width: 18px;
+        height: 18px;
+      }
+    }
+    &-line {
+      width: 0.2rem;
+      height: 2.5rem;
+      background-color: $gray;
+    }
+  }
+  &__navbar {
+    &-item {
+      cursor: pointer;
+    }
+    &-line {
+      width: 0.1rem;
+      height: 2rem;
+      background-color: $gray;
+    }
+  }
+  &__responsive {
+    display: none;
+
+    @include Responsive(tabletsm) {
+      display: flex;
+      width: 100%;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &-content {
+      @include Responsive(tablet) {
+        width: 100%;
+      }
+    }
+    &-input {
+      @include Responsive(tablet) {
+        width: 100%;
+      }
+      outline: none;
+      padding-right: 35px;
+      width: 50rem;
+      color: $gray-600;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &-icon {
+      position: absolute;
+      right: 1.5%;
+      top: 28%;
+      width: 19px;
+      height: 19px;
+      color: #b8b9bc;
+    }
+    &-pic {
+      padding-right: 35px;
+      @include Responsive(tablet) {
+        width: 100%;
+      }
+      z-index: 3;
+      position: absolute;
+      right: 7%;
+      top: 30%;
+      @include Responsive(tabletxs) {
+        right: 9%;
+      }
+      @include Responsive(phonexs) {
+        right: 8.2%;
+      }
+      @include Responsive(phonel) {
+        right: 8.5%;
+      }
+      @include Responsive(phone) {
+        right: 7%;
+        top: 33%;
+      }
+      @include Responsive(phonesm) {
+        right: 8%;
+        top: 33%;
+      }
+      @include Responsive(phone2xs) {
+        right: 10.1%;
+        top: 33%;
+      }
+      &-image {
+        width: 61px;
+        height: 16px;
+        @include Responsive(phone) {
+          height: 14px;
+        }
+      }
+    }
+
+    &-bell {
+      width: 40px;
+      height: 40px;
+      padding: 2.6rem;
+      background-color: $search;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &-icon {
+        width: 24px;
+        height: 24px;
+        color: $gray-600;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.digi__btn {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: $white;
+  color: $gray-700;
+  border: 1px solid $subtitle;
+  border-radius: 100%;
+  &::after {
+    font-size: $fs-4;
+  }
+  @include Responsive(tablet) {
+    display: none;
+  }
+}

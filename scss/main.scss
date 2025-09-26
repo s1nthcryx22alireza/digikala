@@ -1,0 +1,42 @@
+//!---------------- utilities-------------
+
+@import "utilities/function";
+@import "utilities/variables";
+@import "utilities/mixin";
+
+//!---------------- bootstrap-------------
+
+@import "customize";
+
+//!---------------- base-------------
+
+@import "base/typography";
+@import "base/default";
+@import "base/class";
+
+//!---------------- vendor-------------
+
+//!---------------- themes-------------
+
+//!---------------- layouts-------------
+
+@import "layouts/header";
+@import "layouts/story";
+@import "layouts/slider";
+@import "layouts/brands";
+@import "layouts/scroll";
+@import "layouts/supermarket";
+@import "layouts/category";
+@import "layouts/suggest";
+@import "layouts/popbrands";
+@import "layouts/digiclub";
+@import "layouts/mostview";
+@import "layouts/mostsell";
+@import "layouts/articles";
+@import "layouts/digiplus";
+@import "layouts/footer";
+//!---------------- components-------------
+@import "components/button";
+//!---------------- pages-------------
+
+@import "pages/home";

@@ -1,0 +1,84 @@
+@mixin centerizeTag($align: center, $justify: center) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin positionCenter() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin lineBreak($line: 2) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// !0-576px=phone
+// !576px-768px=phone Landscape
+// !768px-992px=tablet Portraite
+// !992px-1200px=tablet Landscape
+// !1200px-1800px=Laptop
+// !1800px>=big Desktop
+@mixin Responsive($breakpoint) {
+  @if $breakpoint==phone2xs {
+    @media only screen and (max-width: 29em) {
+      @content;
+    }
+  }
+  @if $breakpoint==phonesm {
+    @media only screen and (max-width: 34em) {
+      @content;
+    }
+  }
+  //*--------- phone breakpoint 576px ~ 36em
+  @if $breakpoint==phone {
+    @media only screen and (max-width: 36em) {
+      @content;
+    }
+  }
+  //*--------- phonel breakpoint 768px ~ 48em
+  @if $breakpoint==phonexs {
+    @media only screen and (max-width: 42.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint==phonel {
+    @media only screen and (max-width: 48em) {
+      @content;
+    }
+  }
+  //*--------- tablet breakpoint 992px ~ 62em
+  @if $breakpoint==tabletxs {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint==tabletsm {
+    @media only screen and (max-width: 61.99375em) {
+      @content;
+    }
+  }
+  @if $breakpoint==tablet {
+    @media only screen and (max-width: 62em) {
+      @content;
+    }
+  }
+  //*--------- tabletl breakpoint 1200px ~ 75em
+
+  @if $breakpoint==tabletl {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+  //*--------- laptop breakpoint 1800px ~ 112.5em
+
+  @if $breakpoint==laptop {
+    @media only screen and (max-width: 112.5em) {
+      @content;
+    }
+  }
+}

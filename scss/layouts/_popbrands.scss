@@ -1,0 +1,8 @@
+.popbrands {
+  cursor: grab;
+  &__image {
+    max-width: 11rem;
+    height: 11rem;
+    object-fit: contain;
+  }
+}

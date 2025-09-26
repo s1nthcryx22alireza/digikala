@@ -1,0 +1,43 @@
+.story {
+  cursor: grab;
+  &__item {
+    width: 8.5rem;
+    height: 8.5rem;
+    padding: 0.3rem;
+    @include Responsive(phonel) {
+      width: 10.5rem;
+      height: 10.5rem;
+    }
+    @include Responsive(phone) {
+      width: 12.5rem;
+      height: 12.5rem;
+    }
+  }
+  &__description {
+    position: absolute;
+    padding: 0.4rem 1.2rem;
+    font-size: $fs-5;
+    left: 19px;
+    bottom: 45px;
+    color: rgb(216, 130, 199);
+    background-color: rgb(255, 210, 218);
+    border: 2px solid white;
+    border-radius: 10px;
+    @include Responsive(phonel) {
+      left: 23px;
+      bottom: 39px;
+    }
+    @include Responsive(phone) {
+      left: 26px;
+      bottom: 34px;
+      font-size: $fs-4;
+    }
+  }
+  &__description-1 {
+    padding: 0.2rem 0.7rem;
+  }
+  &__text {
+    max-width: 8.5rem;
+    @include lineBreak();
+  }
+}

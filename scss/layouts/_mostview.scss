@@ -1,0 +1,20 @@
+.mostview {
+  &__content {
+    @include Responsive(tablet) {
+      border: none !important;
+    }
+    &-col {
+      @include Responsive(tablet) {
+        border-left: none !important;
+      }
+    }
+    &-img {
+      @include Responsive(tablet) {
+        width: 60% !important;
+      }
+    }
+  }
+  &__item {
+    @include centerizeTag();
+  }
+}
