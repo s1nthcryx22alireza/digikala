@@ -14930,14 +14930,14 @@ body {
     border: none !important;
   }
 }
-@media only screen and (max-width: 36em) {
-  .mostsell__content-item {
-    width: 100% !important;
-  }
-}
 @media only screen and (max-width: 62em) {
   .mostsell__content-item {
     width: 50% !important;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .mostsell__content-item {
+    width: 100% !important;
   }
 }
 @media only screen and (max-width: 62em) {

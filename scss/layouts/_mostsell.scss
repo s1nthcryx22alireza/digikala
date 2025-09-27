@@ -5,11 +5,11 @@
       border: none !important;
     }
     &-item {
-      @include Responsive(phone) {
-        width: 100% !important;
-      }
       @include Responsive(tablet) {
         width: 50% !important;
+      }
+      @include Responsive(phone) {
+        width: 100% !important;
       }
     }
     &-border {
