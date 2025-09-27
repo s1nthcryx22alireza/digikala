@@ -4,6 +4,17 @@
     @include Responsive(tablet) {
       border: none !important;
     }
+    &-item {
+      @include Responsive(phonemin) {
+        width: 25%;
+      }
+      @include Responsive(tabletmin) {
+        width: 50%;
+      }
+      @include Responsive(tabletlmin) {
+        width: 25%;
+      }
+    }
     &-border {
       @include Responsive(tablet) {
         border-bottom: none !important;
