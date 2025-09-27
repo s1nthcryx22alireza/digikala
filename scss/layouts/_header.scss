@@ -92,6 +92,14 @@
       width: 19px;
       height: 19px;
       color: #b8b9bc;
+      @include Responsive(phone) {
+        position: absolute;
+        right: 3%;
+        top: 32%;
+        width: 21px;
+        height: 21px;
+        color: #b8b9bc;
+      }
     }
     &-pic {
       padding-right: 35px;
@@ -144,6 +152,7 @@
         width: 24px;
         height: 24px;
         color: $gray-600;
+        font-size: 3rem;
       }
     }
   }

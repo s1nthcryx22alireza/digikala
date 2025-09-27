@@ -14629,6 +14629,16 @@ body {
   height: 19px;
   color: #b8b9bc;
 }
+@media only screen and (max-width: 36em) {
+  .header__responsive-icon {
+    position: absolute;
+    right: 3%;
+    top: 32%;
+    width: 21px;
+    height: 21px;
+    color: #b8b9bc;
+  }
+}
 .header__responsive-pic {
   padding-right: 35px;
   z-index: 3;
@@ -14696,6 +14706,7 @@ body {
   width: 24px;
   height: 24px;
   color: #6c757d;
+  font-size: 3rem;
 }
 
 .story {
