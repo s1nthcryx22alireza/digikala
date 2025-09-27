@@ -35,6 +35,7 @@
     }
   }
   //*--------- phone breakpoint 576px ~ 36em
+
   @if $breakpoint==phone {
     @media only screen and (max-width: 36em) {
       @content;
@@ -43,11 +44,6 @@
   //*--------- phonel breakpoint 768px ~ 48em
   @if $breakpoint==phonexs {
     @media only screen and (max-width: 42.5em) {
-      @content;
-    }
-  }
-  @if $breakpoint==phonemin {
-    @media only screen and (min-width: 48em) {
       @content;
     }
   }
@@ -68,22 +64,14 @@
       @content;
     }
   }
-  @if $breakpoint==tabletmin {
-    @media only screen and (min-width: 62em) {
-      @content;
-    }
-  }
+
   @if $breakpoint==tablet {
     @media only screen and (max-width: 62em) {
       @content;
     }
   }
   //*--------- tabletl breakpoint 1200px ~ 75em
-  @if $breakpoint==tabletlmin {
-    @media only screen and (min-width: 75em) {
-      @content;
-    }
-  }
+
   @if $breakpoint==tabletl {
     @media only screen and (max-width: 75em) {
       @content;

@@ -5,14 +5,11 @@
       border: none !important;
     }
     &-item {
-      @include Responsive(phonemin) {
-        width: 25%;
+      @include Responsive(phone) {
+        width: 100% !important;
       }
-      @include Responsive(tabletmin) {
-        width: 50%;
-      }
-      @include Responsive(tabletlmin) {
-        width: 25%;
+      @include Responsive(tablet) {
+        width: 50% !important;
       }
     }
     &-border {
